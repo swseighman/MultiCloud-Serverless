@@ -174,7 +174,7 @@ Grant permission for the function:
 
 ![](images/aws-gateway-14.png)
 
-Now we have a new Resource and Method so let's test everything is working ass expected.  Click on the **Test** icon in the Method:
+Now we have a new Resource and Method so let's test everything is working as expected.  Click on the **Test** icon in the Method:
 
 ![](images/aws-gateway-15.png)
 
