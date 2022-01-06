@@ -43,35 +43,35 @@ As a result, a `zip` file is created (example: `build/libs/serverless-demo-0.1.z
 
 First, within the AWS Console, search for **lambda**:
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/lambda-0.png)
+![](images/lambda-0.png)
 
 Select **Lambda**:
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/lambda-2.png)
+![](images/lambda-2.png)
 
 We'll need to create a function, click on the **Create function** button:
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/lambda-3.png)
+![](images/lambda-3.png)
 
 Enter information for our function and click on the **Create function** button:
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/lambda-4.png)
+![](images/lambda-4.png)
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/lambda-11.png)
+![](images/lambda-11.png)
 
 Once our function has been created, we can upload our custom code. Under the **Code Source** section, click on the **Upload** button and choose **.zip file**:
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/lambda-5.png)
+![](images/lambda-5.png)
 
 Choose the `serverless-demo-0.1-lambda.zip` file located in the `build/libs` directory:
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/lambda-6.png)
+![](images/lambda-6.png)
 
 Click on the **Save** button (may take a minute or two to upload):
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/lambda-7.png)
+![](images/lambda-7.png)
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/lambda-12.png)
+![](images/lambda-12.png)
 
 Once the custom code has been uploaded, we can test our lambda function.
 
@@ -93,15 +93,15 @@ Enter the following info which will be passed to the function:
 ```
 Finally, click on the **Save changes** button.
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/lambda-8.png)
+![](images/lambda-8.png)
 
 Click on the **Test** button (on the far right of the UI).  If all goes well, you should see an **Execution results: succeeded (logs)** message highlighted in green.
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/lambda-9.png)
+![](images/lambda-9.png)
 
 Click on the **Details** to see the results:
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/lambda-100.png)
+![](images/lambda-100.png)
 
 In the **body** section of the response, you should see the books listed:
 
@@ -118,7 +118,7 @@ Now that we have successfully created and tested our function, let's create a tr
 
 Click on the **+ Add trigger** button.
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/aws-gateway-1.png)
+![](images/aws-gateway-1.png)
 
 From the dropdown, choose **API Gateway**.
 
@@ -128,76 +128,76 @@ For the purposes of this simple demo, we'll keep the **Security -> Open**.
 
 Click **Add**.
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/aws-gateway-2.png)
+![](images/aws-gateway-2.png)
 
 Next, we'll need to create a Resource that corresponds to our `/books` endpoint in our code. Click on the **bookstore-API** link in the **Trigger** section.
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/aws-gateway-3.png)
+![](images/aws-gateway-3.png)
 
 Click on the `/bookstore` link, then click on **Actions -> Delete Resource**:
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/aws-gateway-5.png)
+![](images/aws-gateway-5.png)
 
 Confirm the deletion:
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/aws-gateway-6.png)
+![](images/aws-gateway-6.png)
 
 Next, we'll create a new Resource.  Click on **Actions -> Create Resource**:
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/aws-gateway-7.png)
+![](images/aws-gateway-7.png)
 
 Add the following parameters then click on **Create Resource**:
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/aws-gateway-8.png)
+![](images/aws-gateway-8.png)
 
 Our new Resource has been created:
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/aws-gateway-9.png)
+![](images/aws-gateway-9.png)
 
 Next, we'll need to add a Method (GET).  Click on the `/books` link then **Actions -> Create Method**:
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/aws-gateway-10.png)
+![](images/aws-gateway-10.png)
 
 In the dropdown, choose **GET**:
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/aws-gateway-11.png)
+![](images/aws-gateway-11.png)
 
  Then click the small checkmark:
  
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/aws-gateway-12.png)
+![](images/aws-gateway-12.png)
 
 On the next screen, enable **Use Proxy Integration** enter **bookstore** as the Lambda Function (should auto-complete as you type).  The click the **Save** button:
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/aws-gateway-13.png)
+![](images/aws-gateway-13.png)
 
 Grant permission for the function:
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/aws-gateway-14.png)
+![](images/aws-gateway-14.png)
 
 Now we have a new Resource and Method so let's test everything is working ass expected.  Click on the **Test** icon in the Method:
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/aws-gateway-15.png)
+![](images/aws-gateway-15.png)
 
 At the bottom of the page, click on the **Test** button.  You should see output on the screen with the expected response:
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/aws-gateway-16.png)
+![](images/aws-gateway-16.png)
 
 Lasts steps deploy the API. Click on **Actions -> Deploy API**:
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/aws-gateway-17.png)
+![](images/aws-gateway-17.png)
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/aws-gateway-18.png)
+![](images/aws-gateway-18.png)
 
 Choose the **default** Deployment Stage and click the **Deploy button**:
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/aws-gateway-19.png)
+![](images/aws-gateway-19.png)
 
 The API is deployed:
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/aws-gateway-20.png)
+![](images/aws-gateway-20.png)
 
 Under the **Stages** section, click on the **default -> /books -> GET** link to see the URL created for your Lambda function:
 
-![](//wsl$/Fedora34/home/sseighma/code/micronaut/function-demo/MultiCloud-Serverless/images/aws-gateway-22.png)
+![](images/aws-gateway-22.png)
 
 
 You can also hit the API from the command line:
