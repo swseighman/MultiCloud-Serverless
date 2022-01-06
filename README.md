@@ -108,7 +108,7 @@ In the **body** section of the response, you should see the books listed:
 ```
 "body": "["Learning Micronaut on AWS Lambda","Micronaut Serverless on AWS Lambda"]",
 ```
-Also notice the **Billed Duration**, if you clisk the **Test** button a few more times, the duration will shrink to **~2ms** (thanks to GraalVM native image).  
+Also notice the **Billed Duration**, if you click the **Test** button a few more times, the duration will shrink to **~2ms** (thanks to GraalVM native image).  
 
 That's fast!
 
