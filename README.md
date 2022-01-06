@@ -216,7 +216,7 @@ x-amzn-RequestId: 5560769d-2793-4612-b413-61acd9001c2c
 
 [
     "Learning Micronaut on AWS Lambda",
-    "Micronaut Serverless on AWS Lamba"
+    "Micronaut Serverless on AWS Lambda"
 ]
 ```
 Congratulations! You have successfully created and deployed a Lambda function and created a resource so that you can access a public URI.
