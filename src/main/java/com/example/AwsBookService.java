@@ -17,8 +17,8 @@ public class AwsBookService
     @Override
     public List<String> listTitles() {
         return List.of(
-            "Learning Micronaut on AWS Lambda",
-            "Micronaut Serverless on AWS Lambda"
+            "Learning Micronaut using AWS Lambda",
+            "Micronaut Serverless using AWS Lambda"
         );
     }        
 }

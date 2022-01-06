@@ -18,8 +18,8 @@ public class OracleBookService
         @Override
         public List<String> listTitles() {
             return List.of(
-                "Learning Micronaut on Oracle Cloud",
-                "Micronaut Serverless on Oracle Cloud"
+                "Learning Micronaut using Oracle Cloud",
+                "Micronaut Serverless using Oracle Functions"
             );
         }    
     }
