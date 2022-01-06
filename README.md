@@ -204,7 +204,7 @@ You can also hit the API from the command line:
 
 ```
 $ curl https://xxxxxx.execute-api.us-east-2.amazonaws.com/default/books
-["Learning Micronaut on AWS Lambda","Micronaut Serverless on AWS Lamba"]
+["Learning Micronaut on AWS Lambda","Micronaut Serverless on AWS Lambda"]
 ```
 Congratulations! You have successfully created and deployed a Lambda function and created a resource so that you can access a public URI.
 
