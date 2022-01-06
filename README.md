@@ -166,7 +166,7 @@ In the dropdown, choose **GET**:
  
 ![](images/aws-gateway-12.png)
 
-On the next screen, enable **Use Proxy Integration** enter **bookstore** as the Lambda Function (should auto-complete as you type).  The click the **Save** button:
+On the next screen, enable **Use Proxy Integration** enter **bookstore** as the Lambda Function (should auto-complete as you type).  Then click the **Save** button:
 
 ![](images/aws-gateway-13.png)
 
