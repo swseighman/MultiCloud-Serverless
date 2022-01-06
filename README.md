@@ -203,8 +203,21 @@ Under the **Stages** section, click on the **default -> /books -> GET** link to 
 You can also hit the API from the command line:
 
 ```
-$ curl https://xxxxxx.execute-api.us-east-2.amazonaws.com/default/books
-["Learning Micronaut on AWS Lambda","Micronaut Serverless on AWS Lambda"]
+$ http https://xxxxxx.execute-api.us-east-2.amazonaws.com/default/books
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 72
+Content-Type: application/json
+Date: Thu, 06 Jan 2022 19:23:10 GMT
+X-Amzn-Trace-Id: Root=1-61d7419e-4b5240c15a5e7ead6c061c12;Sampled=0
+x-amz-apigw-id: LicwuEK-CYcF91Q=
+x-amzn-Remapped-Date: Thu, 6 Jan 2022 19:23:10 GMT
+x-amzn-RequestId: 5560769d-2793-4612-b413-61acd9001c2c
+
+[
+    "Learning Micronaut on AWS Lambda",
+    "Micronaut Serverless on AWS Lamba"
+]
 ```
 Congratulations! You have successfully created and deployed a Lambda function and created a resource so that you can access a public URI.
 
